@@ -1,0 +1,23 @@
+current_datetime=$(date)
+
+
+current_user=$(whoami)
+
+current_directory=$(pwd)
+
+
+echo "Current Date and Time: $current_datetime"
+echo "Username: $current_user"
+echo "Current Working Directory: $current_directory"
+--------------------------------------------------------------------------------------
+
+output:-
+[mca@localhost ~]$ vi jasna.sh
+[mca@localhost ~]$ ./jasna.sh
+Current Date and Time: Thu Mar  6 10:36:03 AM IST 2025
+Username: mca
+Current Working Directory: /home/mca
+
+
+
+
