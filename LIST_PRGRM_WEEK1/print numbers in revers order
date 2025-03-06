@@ -1,0 +1,25 @@
+echo "Enter the start number:"
+read start
+echo "Enter the end number:"
+read end
+
+
+for (( num=$end; num>=$start; num-- ))
+do
+    echo -n "$num "
+done
+echo
+
+OUTPUT:-
+[mca@localhost ~]$ vi week1.sh
+[mca@localhost ~]$ ./week1.sh
+Enter the start number:
+56
+Enter the end number:
+98
+98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 
+[mca@localhost ~]$ 
+
+
+
+
