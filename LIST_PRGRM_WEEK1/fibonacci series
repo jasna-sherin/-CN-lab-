@@ -1,0 +1,34 @@
+echo "Enter the number of terms:"
+read n
+
+
+a=0
+b=1
+
+
+echo "Fibonacci Series up to $n terms:"
+for (( i=0; i<n; i++ ))
+do
+    echo -n "$a "
+    fn=$((a + b))
+    a=$b
+    b=$fn
+done
+echo
+
+
+output:-
+[mca@localhost ~]$ chmod +x week1.sh
+[mca@localhost ~]$ ./week1.sh
+Enter the number of terms:
+3
+Fibonacci Series up to 3 terms:
+0 1 1 
+./week1.sh: line 18: i: command not found
+[mca@localhost ~]$ ./week1.sh
+Enter the number of terms:
+10
+Fibonacci Series up to 10 terms:
+0 1 1 2 3 5 8 13 21 34 
+
+
