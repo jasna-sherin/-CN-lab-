@@ -1,0 +1,57 @@
+echo "Enter the number of elements in the array:"
+read n
+
+
+declare -a arr
+
+
+echo "Enter the elements of the array:"
+for ((i = 0; i < n; i++)); do
+    echo "Enter element $((i + 1)):"
+    read arr[$i]
+done
+
+
+echo "The elements in the array are:"
+for ((i = 0; i < n; i++)); do
+    echo "Element $((i + 1)): ${arr[$i]}"
+done
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+output:-
+[mca@localhost ~]$ vi jesi.sh
+[mca@localhost ~]$ ./jesi.sh
+Enter the number of elements in the array:
+3
+Enter the elements of the array:
+Enter element 1:
+jasna
+Enter element 2:
+sherin
+Enter element 3:
+hymoolu
+The elements in the array are:
+Element 1: jasna
+Element 2: sherin
+Element 3: hymoolu
+[mca@localhost ~]$ vi jesi.sh
+[mca@localhost ~]$ 
