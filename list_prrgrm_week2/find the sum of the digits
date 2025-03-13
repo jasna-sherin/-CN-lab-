@@ -1,0 +1,30 @@
+
+
+echo "Enter a number:"
+read num
+
+
+sum=0
+
+
+while [ $num -gt 0 ]; do
+
+    digit=$((num % 10))
+
+    sum=$((sum + digit))
+
+    num=$((num / 10))
+done
+
+
+echo "The sum of the digits is: $sum"
+                                     
+output:-
+The reverse of 54678 is: 87645
+[mca@localhost ~]$ vi week2.sh
+[mca@localhost ~]$ ./week2.sh
+Enter a number:
+45565  
+The sum of the digits is: 25
+[mca@localhost ~]$ 
+
