@@ -1,0 +1,66 @@
+
+
+
+
+
+
+a=0
+b=1
+sum=0
+
+limit=10
+
+echo "Fibonacci series up to $limit terms:"
+
+for (( i=1; i<=limit; i++ ))
+do
+
+    echo -n "$a "
+
+
+    sum=$((sum + a))
+
+
+    next=$((a + b))
+    a=$b
+    b=$next
+done
+
+
+
+echo "The sum of the first $limit Fibonacci numbers is: $sum"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OUTPUT:-
+[mca@localhost ~]$ ./week2.sh
+Fibonacci series up to 10 terms:
+0 1 1 2 3 5 8 13 21 34 The sum of the first 10 Fibonacci numbers is: 88
+[mca@localhost ~]$ 
+
+
+
+
+
+
+
+
+
