@@ -1,0 +1,8 @@
+[ -d /home/mca ] && echo "Directory" || echo "Not a directory"
+
+
+  output:-
+    [mca@localhost ~]$ ./week2.sh
+Directory
+[mca@localhost ~]$ vi week2.sh
+[mca@localhost ~]$ 
