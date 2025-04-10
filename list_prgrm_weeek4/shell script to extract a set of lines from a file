@@ -1,0 +1,18 @@
+if [ $# -ne 3 ]; then
+        echo "Usage: $0 <file> <start_line> <end_line>"
+        exit 1
+fi
+file=$1
+start_line=$2
+end_line=$3
+sed -n "${start_line},${end_line}p" "$file"
+
+
+output
+-------
+
+[mca@localhost devika]$ vi extract.sh
+[mca@localhost devika]$ chmod +x extract.sh
+[mca@localhost devika]$ ./extract.sh abcd.txt 1 2
+apple
+ball
