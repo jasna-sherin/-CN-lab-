@@ -1,0 +1,37 @@
+
+read -p "Enter the first file name: " file1
+read -p "Enter the second file name: " file2
+
+if cmp -s "$file1" "$file2"; then
+    echo "Files are the same. Deleting $file2..."
+    rm "$file2"
+else
+    echo "Files are different."
+fi
+
+
+
+output;
+[mca@localhost ~]$ ./jasna1.sh
+Enter the first file name: jasna1.sh
+Enter the second file name: jasna.sh
+Files are different.
+[mca@localhost ~]$ ./jasna1.sh
+Enter the first file name: week1.sh
+Enter the second file name: week1.sh
+Files are the same. Deleting week1.sh...
+[mca@localhost ~]$ vi jasna1.sh^C
+[mca@localhost ~]$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
