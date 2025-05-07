@@ -1,0 +1,25 @@
+
+f() {
+  r=1
+  for ((i=2; i<=$1; i++)); do
+    r=$((r * i))
+  done
+  echo $r
+}
+
+read -p "Enter n: " n
+read -p "Enter r: " r
+
+a=$(f $n)
+b=$(f $r)
+c=$(f $((n - r)))
+
+echo "nCr = $((a / (b * c)))"
+
+output;
+
+
+[mca@localhost ~]$ ./jasna1.sh
+Enter n: 5
+Enter r: 2
+nCr = 10
