@@ -1,0 +1,40 @@
+1. Write a shell script that takes a final year as input from the user and displays all the
+leap years from the current year up to the final year.
+2. Create a menu-driven shell script that provides the following functionalities:
+a. Delete all lines containing a specific word from a specified file.
+b. Count the occurrence of each word in a specified file.
+c. Exit the script.
+Set 2
+1. Write a shell program to print all prime numbers up to a limit.
+2. Develop a shell script that performs a menu-driven program to display:
+- All ordinary files
+- All directory files
+- All special files
+- All files readable by the owner, group, and others
+- All files writable by the owner, group, and others
+- All files executable by the owner, group, and others
+Set 3
+1. Write a shell script that calculates nCr using a function and takes the values of n and r
+as command-line arguments.
+2. Write a shell script that takes a file name and a range of line numbers as input and
+prints the specified lines from the file. The range should be inclusive (both start and
+end line numbers should be included).
+Set 4
+1. Write a shell script that takes two numbers and an arithmetic operation (+, -, *, /) as
+command-line arguments. Implement the arithmetic operation based on the provided
+operator using a case statement.
+2. Create a shell script that takes a file name as input and deletes all lines that contain the
+word "linux" from that file. The modified content should be saved back to the original
+file.
+Set 5
+1. Create a menu-driven shell script that provides the following functionalities:
+a. Check if a given number is a prime number.
+b. Calculate the factorial of a given number.
+c. Exit the script.
+2. Write a shell script to check whether two files are same or not ,if same delete one.
+Set 6
+1. Create a menu-driven shell script that provides the following functionalities:
+a. Display the lines of a specified file in reverse order.
+b. List all files in a specified directory.
+c. Exit the script.
+2. Write shell script to test whether the given year is a leap year or not.
