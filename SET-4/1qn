@@ -1,0 +1,23 @@
+# Get user input for two numbers and the operator
+read -p "Enter first number: " num1
+read -p "Enter an operator (+, -, *, /): " operator
+read -p "Enter second number: " num2
+
+# Perform the operation based on the operator
+case $operator in
+    +) echo "Result: $((num1 + num2))" ;;
+    -) echo "Result: $((num1 - num2))" ;;
+    \*) echo "Result: $((num1 * num2))" ;;
+    /) echo "Result: $((num1 / num2))" ;;
+    *) echo "Invalid operator" ;;
+esac
+
+output;
+
+[mca@localhost ~]$ ./jasna1.sh
+Enter first number: 5
+Enter an operator (+, -, *, /): +
+Enter second number: 8
+Result: 13
+[mca@localhost ~]$ 
+
