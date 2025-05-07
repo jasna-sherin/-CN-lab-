@@ -1,0 +1,42 @@
+while true
+do
+    echo "1. Delete lines with a specific word"
+    echo "2. Count word occurrences"
+    echo "3. Exit"
+    read -p "Choice: " choice
+
+    case $choice in
+        1)
+            read -p "Enter file name: " file
+            read -p "Enter word to delete: " word
+            sed -i "/$word/d" "$file" && echo "Deleted lines containing '$word'."
+            ;;
+        2)
+            read -p "Enter file name: " file
+            tr -s ' ' '\n' < "$file" | sort | uniq -c | sort -nr
+            ;;
+        3) exit ;;
+        *) echo "Invalid choice" ;;
+    esac
+done
+
+output;
+[mca@localhost ~]$ ./jasna2.sh
+1. Delete lines with a specific word
+2. Count word occurrences
+3. Exit
+Choice: 1
+Enter file name: sethu.sh
+Enter word to delete: jasna
+Deleted lines containing 'jasna'.
+1. Delete lines with a specific word
+2. Count word occurrences
+3. Exit
+Choice: 2
+Enter file name: sethu.sh
+      1 sethu
+      1 meghna
+1. Delete lines with a specific word
+2. Count word occurrences
+3. Exit
+Choice: 
